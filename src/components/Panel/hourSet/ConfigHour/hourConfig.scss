@@ -1,0 +1,52 @@
+@import '../../../../App.scss';
+
+.hourConfig {
+    width: 100%;
+    margin: 1rem;
+
+    form {
+        width: 100%;
+        margin-top: 2rem;
+
+        .hourConfig-data {
+            width: 100%;
+            display: flex;
+            gap: 20%;
+        }
+
+        .btn {
+            margin-top: 2rem;
+            height: 30px;
+            padding: 6px;
+            border-radius: 6px;
+            border: solid 1px $colorB;
+            background-color: $colorA;
+            color: aliceblue;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover {
+                background-color: $colorB;
+            }
+        }
+
+        .btnDiv {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            width: 210px;
+
+            p {
+                color: red;
+            }
+
+            .lin {
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+            }
+        }
+    }
+}

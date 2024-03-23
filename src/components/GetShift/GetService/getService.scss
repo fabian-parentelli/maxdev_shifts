@@ -1,0 +1,39 @@
+@import '../../../App.scss';
+
+.getService {
+    margin-left: 8%;
+    margin-bottom: 2rem;
+
+    select {
+        font-size: 16px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none; 
+        appearance: none; 
+        background-color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #aaa;
+        }
+
+        &:focus {
+            border-color: $colorA;
+            box-shadow: 0 0 5px $colorA;
+        }
+    }
+
+    option {
+        background-color: #fff;
+        color: #333;
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
+
+        &:disabled {
+            color: #999;
+        }
+    }
+}

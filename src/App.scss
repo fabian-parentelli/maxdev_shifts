@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+$colorA: #35374B;
+$colorB: #344955;
+$colorC: #50727B;
+$colorD: #78A083;
+$colorE: #F6F5F5;
+
+body {
+    background-color: $colorE;
+}
+
+html {
+    scroll-behavior: smooth;
+}

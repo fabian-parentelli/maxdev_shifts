@@ -1,0 +1,54 @@
+@import '../../../app.scss';
+
+.fields {
+    width: 100%;
+
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+
+        .arrow {
+            width: 15px;
+            transition: .3s;
+        }
+    }
+
+    .accordion {
+        height: 0px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.3s ease-in-out;
+        text-decoration: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            background-color: $colorA;
+            padding: 12px;
+            border-left: solid 2px $colorC;
+            transition: .3s;
+            cursor: pointer;
+            color: $colorE;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $colorB;
+            }
+
+            &:active {
+                color: $colorC;
+            }
+        }
+    }
+
+    .animated {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.linkData {
+    text-decoration: none;
+}

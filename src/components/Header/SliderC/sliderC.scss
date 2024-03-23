@@ -1,0 +1,46 @@
+@import '../../../App.scss';
+
+.sliderC {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.342)), url('/public/sliderC.jpg');
+    background-size: cover;
+    background-position: bottom;
+    color: $colorE;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+
+    .separatorA {
+        width: 300px;
+        filter: brightness(0.8) sepia(0.5) hue-rotate(220deg) saturate(150%);
+    }
+
+    .silerA-pa {
+        font-family: "Dancing Script", cursive;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 3rem;
+    }
+
+    .btn-a {
+        color: $colorE;
+        text-decoration: none;
+        background-color: $colorA;
+        padding: 12px 1rem;
+        width: 200px;
+        text-align: center;
+        margin-top: 1rem;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: $colorB;
+        }
+    }
+}

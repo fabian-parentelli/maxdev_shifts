@@ -1,0 +1,13 @@
+.getHour {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 350px;
+    width: 300px;
+
+    h4 {
+        margin-left: 12px;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,65 @@
+@import '../../App.scss';
+
+.panel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+
+    .topDiv {
+        background-color: $colorA;
+        width: 100%;
+        height: 70px;
+    }
+
+    .panelContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .panelA {
+            width: 200px;
+            min-height: 90vh;
+            padding: 6px 3px 0 18px;
+            background-color: $colorA;
+        }
+    }
+
+    .icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .panel {
+        overflow: hidden;
+
+        .panelContainer {
+            position: relative;
+
+            .panelA {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                transition: left 0.3s ease;
+                padding-right: 20%;
+            }
+
+            .isClosed {
+                left: -100%;
+            }
+        }
+
+        .icon {
+            display: block;
+            position: absolute;
+            top: 15%;
+            right: 2%;
+            font-size: 40px;
+            color: $colorC;
+            cursor: pointer;
+        }
+    }
+}

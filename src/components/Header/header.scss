@@ -1,0 +1,28 @@
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.slick-dots li.slick-active button {
+    background-color: white;
+}

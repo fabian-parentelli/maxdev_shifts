@@ -1,0 +1,41 @@
+@import '../../../../App.scss';
+
+.vewConfigShifts {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+
+    h2 {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .vwData {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .btn {
+            height: 30px;
+            width: 100px;
+            border-radius: 6px;
+            border: none;
+            background-color: $colorA;
+            color: $colorE;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            margin-top: 2rem;
+            margin-left: 18%;
+            font-weight: 600;
+            &:hover {
+                background-color: $colorB;
+            }
+        }
+    }
+}

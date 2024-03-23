@@ -1,0 +1,50 @@
+@import '../../App.scss';
+
+.gitShift {
+
+    .place {
+        height: 70px;
+        background-color: $colorA;
+    }
+
+    h2 {
+        margin-left: 5%;
+        margin-top: 1rem;
+    }
+
+    form {
+
+        .setForm {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            width: 100px;
+            height: 30px;
+            margin-left: 5%;
+            border-radius: 6px;
+            border: none;
+            background-color: $colorA;
+            color: $colorE;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                background-color: $colorB;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gitShift {
+        form {
+            .setForm {
+                align-items: center;
+            }
+        }
+    }
+}
